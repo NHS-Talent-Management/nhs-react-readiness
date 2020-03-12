@@ -11,7 +11,9 @@ gradlew.bat
 /build
 /classes
 /gradle
+/.idea
 
+**/.idea
 **/.sass-cache
 **/.classpath
 **/.gradle
