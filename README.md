@@ -1,5 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Initial setup
+To initialise npm in the project for the first time, run 
+`npm install`
+
+Once npm is installed you can run the commands listed below.
+
+If you want to target a different environment, the endpoint URL must be configured in index.js file, e.g.
+window.portal_path = "https://dev02.nonlive.nhs.placecube.com"; 
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
