@@ -48,13 +48,6 @@ export default class Header extends Component {
                                     Join now
                                 </button>
                             </a>
-                            {!this.state.user &&
-                            <a href="/login">
-                                <button className="nhsuk-button nhs-sign-in-modal">
-                                    Log in
-                                </button>
-                            </a>
-                            }
                             {this.state.user &&
                             <a href="/" onClick={this.onClick}>
                                 <button className="nhsuk-button nhs-sign-out-modal">
