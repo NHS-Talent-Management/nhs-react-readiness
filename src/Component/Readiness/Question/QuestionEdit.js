@@ -36,10 +36,12 @@ export default class QuestionEdit extends Component {
 
     handleSaveAndNext(event) {
         fetch(window.headlessPath_question + this.state.question.id, {
-            "method": "PUT",
+        	"async": true,
+            "crossDomain": true,
+        	"method": "PUT",
             "headers": {
                 "Authorization": "Basic "+ getToken(),
-                "Content-Typ": "text/plain"
+                "Content-Type": "text/plain"
             },
             body: this.state.selectedAnswer
         }).catch(console.log)
@@ -59,7 +61,7 @@ export default class QuestionEdit extends Component {
             "method": "GET",
             "headers": {
                 "Authorization": "Basic "+ getToken(),
-                "Content-Typ": "application/json"
+                "Content-Type": "application/json"
             }
         }).then(res => res.json())
             .then((data) => {

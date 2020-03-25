@@ -43,17 +43,19 @@ export default class Header extends Component {
 
                     <div className="nhsuk-header__content" id="content-header">
                         <div className="pull-right">
-                            <a href={window.portal_sign_up}>
-                                <button className="nhsuk-button nhsuk-button--reverse nhsuk-u-margin-right-4">
-                                    Join now
-                                </button>
-                            </a>
+                        	{!this.state.user &&
+	                            <a href={window.portal_sign_up}>
+	                                <button className="nhsuk-button nhsuk-button--reverse nhsuk-u-margin-right-4">
+	                                    Join now
+	                                </button>
+	                            </a>
+                        	}
                             {this.state.user &&
-                            <a href="/" onClick={this.onClick}>
-                                <button className="nhsuk-button nhs-sign-out-modal">
-                                    Log out
-                                </button>
-                            </a>
+	                            <a href="/" onClick={this.onClick}>
+	                                <button className="nhsuk-button nhs-sign-out-modal">
+	                                    Log out
+	                                </button>
+	                            </a>
                             }
                         </div>
                     </div>

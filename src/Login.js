@@ -16,7 +16,7 @@ function Login(props) {
             "method": "GET",
             "headers": {
                 "Authorization": "Basic " + authorizationToken,
-                "Content-Typ": "application/json"
+                "Content-Type": "application/json"
             }
         });
         if(response.ok){

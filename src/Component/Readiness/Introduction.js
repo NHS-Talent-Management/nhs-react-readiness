@@ -45,7 +45,7 @@ export default class Edit extends Component {
             "method": "GET",
             "headers": {
                 "Authorization": "Basic "+ getToken(),
-                "Content-Typ": "application/xml"
+                "Content-Type": "application/xml"
             }
         }).catch(console.log)
         const text = await response.text();

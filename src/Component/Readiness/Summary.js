@@ -51,7 +51,7 @@ export default class Readiness extends Component {
             "method": "GET",
             "headers": {
                 "Authorization": "Basic "+ getToken(),
-                "Content-Typ": "application/json"
+                "Content-Type": "application/json"
             }
         }).then(res => res.json())
             .then((data) => {
