@@ -61,7 +61,7 @@ function Login(props) {
                         <label className="nhsuk-label">
                             Email address
                         </label>
-                        <input type="username" {...emailAddress}
+                        <input type="username" {...emailAddress} autoComplete="new-password"
                                className="nhsuk-input "/>
                     </div>
 
@@ -69,7 +69,7 @@ function Login(props) {
                         <label className="nhsuk-label">
                             Password
                         </label>
-                        <input type="password" {...password}
+                        <input type="password" {...password} autoComplete="new-password"
                                className="nhsuk-input" />
                     </div>
 
