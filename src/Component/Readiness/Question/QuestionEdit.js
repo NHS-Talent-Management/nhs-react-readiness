@@ -114,7 +114,7 @@ export default class QuestionEdit extends Component {
                             <button ref={(buttonNext) => {
                                 this.buttonNext = buttonNext;
                             }} className="nhsuk-button nhs-sign-in-modal w-100" onClick={this.onSaveAndNext} >
-                                Save And Continue
+                                Save and Continue
                             </button>
                         </div>
                     </div>

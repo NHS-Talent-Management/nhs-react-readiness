@@ -7,8 +7,10 @@ export default class Edit extends Component {
             <div className="readiness-intro-message">
                 <h1>Thank you</h1>
                 <p className="nhsuk-body">
-                    Thank you for completing your NHS Readiness App. Why not take a few moments to review your findings in the Talent Platform or on one of your chosen IT systems.
-                    This App information is subject to continuous change so it is recommended that you review / refresh this information at least every 3 months.
+                	Thank you for updating your NHS Career Readiness questions. Why not take a few moments to review your findings in the Talent Platform or on one of your chosen IT systems.
+                </p>
+                <p className="nhsuk-body">
+                	This information is subject to continuous change so it is recommended that you review / refresh this information at least every 3 months.
                 </p>
 
                 <div className="row">
@@ -20,7 +22,7 @@ export default class Edit extends Component {
 
                     <div className="col-md-6">
                         <a href={window.portal_my_profile} className="nhsuk-button nhsuk-button--secondary w-100">
-                            Go to the Talent Platform
+                            Go to my profile
                         </a>
                     </div>
                 </div>

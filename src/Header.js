@@ -6,15 +6,10 @@ export default class Header extends Component {
         super();
         this.state = {user: getUser()};
         this.onClick = this.handleClick.bind(this);
-        this.state = {loginText: "Login"}
-        if (this.user) {
-            this.state = {loginText: "Logout"}
-        }
     }
 
     handleClick(event) {
         removeUserSession();
-        this.loginText = "Login"
     }
 
 
