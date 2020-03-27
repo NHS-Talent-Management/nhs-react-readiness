@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {setUserSession} from './Utils/Common';
-import Form from "reactstrap/es/Form";
 
 function Login(props) {
     const [loading, setLoading] = useState(false);
@@ -42,7 +41,6 @@ function Login(props) {
     }
 
     return (
-        <Form>
             <div>
                 <div><h2>Login</h2></div>
                 <div>
@@ -63,7 +61,7 @@ function Login(props) {
                         <label className="nhsuk-label">
                             Email address
                         </label>
-                        <input type="username" {...emailAddress} autoComplete="new-password"
+                        <input type="username" {...emailAddress}
                                className="nhsuk-input "/>
                     </div>
 
@@ -71,7 +69,7 @@ function Login(props) {
                         <label className="nhsuk-label">
                             Password
                         </label>
-                        <input type="password" {...password} autoComplete="new-password"
+                        <input type="password" {...password}
                                className="nhsuk-input" />
                     </div>
 
@@ -81,8 +79,6 @@ function Login(props) {
                     {loading ? 'Loading...' : 'Login'}
                 </button>
             </div>
-        </Form>
-
     );
 }
 
