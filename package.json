@@ -1,6 +1,6 @@
 {
   "name": "nhs-readinessquestionnaire-app-reactjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "homepage": "./",
   "dependencies": {
@@ -33,12 +33,14 @@
     "production": [
       ">0.2%",
       "not dead",
-      "not op_mini all"
+      "not op_mini all",
+      "ie 11"
     ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version"
+      "last 1 safari version",
+      "ie 11"
     ]
   }
 }
