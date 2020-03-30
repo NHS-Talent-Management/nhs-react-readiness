@@ -1,5 +1,6 @@
 import * as React from "react";
 import {Component} from "react";
+import {Link} from "react-router-dom";
 
 export default class Edit extends Component {
     render() {
@@ -15,9 +16,7 @@ export default class Edit extends Component {
 
                 <div className="row">
                     <div className="col-md-6">
-                        <a href="/readiness" className="nhsuk-button w-100">
-                            View summary
-                        </a>
+                        <Link to="/readiness" className="nhsuk-button w-100">View summary</Link>
                     </div>
 
                     <div className="col-md-6">
