@@ -36,6 +36,24 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
+If you are deploying the app on Liferay tomcat instance, make sure the property `window.router_basename` in `index.js` matches the resulting folder name in `tomcat/webapps`
+
+Example index.js:
+```
+window.router_basename = /readiness
+```
+The app should then be deployed in:
+```
+tomcat/webapps/readiness
+```
+
+You also need to copy the `WEB-INF` folder from source into the `tomcat/webapps/<your folder>`
+
+For example the following needs to be a valid path:
+```
+tomcat/webapps/readiness/WEB-INF/web.xml
+```
+
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
