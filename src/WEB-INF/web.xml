@@ -5,8 +5,9 @@
           http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
           version="2.4">
 
-  <display-name>my-app-name</display-name>
-
+  <display-name>react-app</display-name>
+<!-- Routes all of the react traffic that is not recognized by Tomcat back to root index.html file
+ which includes ReactJS Router. Router than handles the traffic from there. -->
   <error-page>
     <error-code>404</error-code>
     <location>/index.html</location>
