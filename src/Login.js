@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {setUserSession} from './Utils/Common';
-import Form from "reactstrap/es/Form";
 
 function Login(props) {
     const [loading, setLoading] = useState(false);
@@ -42,7 +41,6 @@ function Login(props) {
     }
 
     return (
-        <Form>
             <div>
                 <div><h2>Login</h2></div>
                 <div>
@@ -81,8 +79,6 @@ function Login(props) {
                     {loading ? 'Loading...' : 'Login'}
                 </button>
             </div>
-        </Form>
-
     );
 }
 

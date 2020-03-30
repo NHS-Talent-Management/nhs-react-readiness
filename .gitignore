@@ -4,6 +4,7 @@
 .project
 .settings
 .touch
+package-lock.json
 gradlew
 gradlew.bat
 
