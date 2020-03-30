@@ -11,5 +11,6 @@ window.headlessPath = window.portal_path + "/o/nhs-headless-user-readiness/1.0.0
 window.headlessPath_questionnaire = window.headlessPath + "/questionnaire";
 window.headlessPath_questionnaire_intro = window.headlessPath + "/questionnaire-intro";
 window.headlessPath_question = window.headlessPath + "/question/";
+window.router_basename = "/readiness"; 
 
 ReactDOM.render(<App/>, document.getElementById('root'));

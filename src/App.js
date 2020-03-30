@@ -8,7 +8,7 @@ function App() {
 
     return (
         <div className="App">
-            <BrowserRouter>
+            <BrowserRouter basename={window.router_basename} >
                 <Header/>
                 <Content/>
                 <Footer/>
